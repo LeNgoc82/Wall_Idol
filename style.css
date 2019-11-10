@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #2c2e3d;
+    width: 100%;
+    height: 500px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu .logo{
+    margin-left: 12%;
+}
+.main-menu .logo img {
+    margin-top: 10px;
+}
+.main-menu .logo h3{
+    margin-top: 20px;
+    display: inline-block;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+
+.main-menu ul li {
+    float: left;
+    list-style: none;
+}
+.main-menu .title{
+    margin-left: 30%;
+}
+.main-menu .title ul li {
+    padding: 22px 18px;
+}
+.main-menu .task span{
+    margin-top: -10px;
+    background:  #00bcd4;
+    font-size: 10px;
+    height: 15px;
+    width: 17px;
+
+}
+.main-menu .task ul li{
+    padding: 20px 10px;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color: #99a9b5;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24x;
+}
+.main-menu ul li a:active{ /* khi cái đó đc active thì em thêm border nhưng mà nếu vậy thì mấy phần tử sau sẽ bị dịch 1 chút... xử lí sao ta ~.~ */
+    border: 2px solid white;
+    padding: 3px;
+}
+/* em nghĩ nếu dùng js thì select ul li ( kết quả là thành 1 mảng) khi có sự kiện click em sẽ add class="active" vào xong css cho active */
+.main-menu ul li a:hover{ /* cái này là em cho khi mouse over thôi ạ */
+    color: #00bcd4;
+}
+.slider{
+    clear: left;
+}
+.slider .unknown{
+    
+    text-align: center;
+}
+
+.slider .unknown img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+}
+.slider .unknown h1{
+    color: white;
+    display: inline-block;
+    font-weight: normal;
+    margin-top: 4%;
+    letter-spacing: 4px;
+    font-size: 35px;
+}
+.slider .unknown h1#table{
+    font-weight: 900;
+}
+.slider div p{
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+}
+.slider div{
+    display: none;
+}
+.slider div:first-child {
+    display: block;
+} 
+.slider input{
+    display: none; /* hiu hiu em cho ẩn cái tròn tròn đi vì em ko cho nó xuống dưới được ><*/
+}
+.slider input:checked + div{
+    display: block;
+}
+.slider div label {
+    cursor: pointer;
+    position: absolute;
+}
+.slider div label:first-child{
+    left: 0;
+    top: 50%;
+}
+.slider div label:last-child{
+    right: 0;
+    top: 50%;
+}
+.slider div label img{
+    height: 40px;
+    width: 40px;
+}
+.purtail{
+    text-align: center;
+    margin-top: 2%;
+}
+.purtail button{
+    width: 170px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family:Montserrat ;
+    margin: 10px;
+}
+.purtail button:hover{
+    background: #00bcd4;
+}
+.content{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.content .title h1{
+    color: #2c2e3d;
+    display: inline-block;
+    font-weight: normal;
+    margin-top: 8%;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    /* text-align: center;  */
+    /* cái này em ko hiểu tại sao khi mà cho cái .title vào thì text-align: center không kích hoạt. nên em để style ở bên html*/
+}
+.content .title h1#ipsum{
+    font-weight: 900;
+}
+
+.content .text{
+    margin-top: 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #99a9b5;
+}
+.content .Pricing-table{
+    display: flex;
+    background-color: #f0f3f2;
+    margin-top: 8%;
+}
+.content .Pricing-table>div{
+    height: 720px;
+    width: 25%;
+    border: 1px solid #dfe5e8;
+}
+.content >div .new-lable{
+    position: absolute;
+    padding-left: 30px;
+    margin-top: -22px;
+    z-index: 0;
+}
+/* em ko rõ làm sao để chỉ cho mỗi cái kích thước của level thay đổi ạ*/
+.content .Pricing-table>div:hover{
+    background-color:#ffffff;
+    transform: scale(1.05);
+}
+.content .Pricing-table>div .level h2{
+    height: 70px;
+    line-height: 70px; 
+}
+.content .Pricing-table>div .level h2{   
+    text-align: center;
+    color: #5f727f;
+}
+
+.content .Pricing-table>div .price{
+    height: 120px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;  
+}
+.content .Pricing-table>div .price h1{
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.content .Pricing-table>div .price h5{
+    margin-top: -15%;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+.content .Pricing-table>div .price01{
+    background-color:#b0de79 ;
+}
+.content .Pricing-table>div .price02{
+    background-color:#7ee0bf ;
+}
+.content .Pricing-table>div .price03{
+    background-color:#83bce9 ;
+}
+.content .Pricing-table>div .price04{
+    background-color:#a289e8 ;
+}
+.content .Pricing-table>div .subtitle{
+    height: 90px;
+    line-height: 90px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+.content .Pricing-table>div .subtitle h2{
+    color: #42c6da;
+    font-weight: lighter;
+}
+.content .Pricing-table>div .subtitle h5{
+    color: #99a9b5;
+}
+.content .Pricing-table>div .list ul li, .prtble02>div .list ul li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid #dfe5e8;
+    padding: 15px;
+} 
+/* em demo vài cái thôi ạ*/
+.list .gach-chu p {
+    text-decoration: line-through;
+}
+.content .Pricing-table>div button{
+    background-color: transparent;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    background: #393d50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.content .Pricing-table>div button:hover{
+    background: #83bce9;
+}
+.content .prtble02{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.content .prtble02>div{
+    background-color: #f0f3f2;
+    height: 480px;
+    width: 30%;   
+}
+/* tại sao em lại ko tác dộngđc 1 chút gì vào nó ? */
+/* .content .prtble02>div .new-lable{
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    margin-right: -500px;
+
+} */
+.content .prtble02>div:hover{
+    transform-origin: bottom right;
+    transform: scale(1.05);
+    
+    /* border: 2px solid #393d50;  */
+    /* taị sao nó ko border hết cả ở trên div class level nhỉ @@ thế nên em quyết định cmt nó lại @@ */
+}
+.content .prtble02>div .level {
+    background-color: #393d50;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: -100px;
+}
+.content .prtble02>div .level h2{
+    padding-top: 7%;
+    color: #00bcd4;
+}
+.content .prtble02>div .level h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+.content .prtble02>div .level h4 span{
+    color: #8f9daa;
+}
+.content .prtble02>div .subtitle{
+    text-align: center;
+}
+.content .prtble02>div .subtitle h2{
+    color: #00bcd4;
+}
+.content .prtble02>div .subtitle h5{
+    color: #a9b6c0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.content .prtble02>div .order{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.content .prtble02>div button {
+    background: none;
+    width:120px;
+    height: 40px;
+    border-radius: 5px;
+    color: #00bcd4;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #00bcd4;
+   
+}
+.content .prtble02>div button:hover{
+    color: white;
+    background: #00bcd4;
+}
+
+/* cai thu 3 ne */
+.content .prtble03 {
+    margin-top: 8%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .prtble03>div{
+    background-color: #f0f3f2;
+    width: 20%;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.content .prtble03>div:hover{
+    background-color: #393d50;
+    transform: scale(1.1);
+}
+.content .prtble03>div h2{
+    color:#7b7b87;
+    margin-top: 13%;
+    font-weight:lighter;
+}
+.content .prtble03>div h4{
+    color: #a6b4be;
+    
+}
+.content .prtble03>div .price{
+    height: 140px;
+    border-radius: 50%;;
+    background: #ffff;
+    margin: 15%;
+}
+.content .prtble03>div .price h3{
+    font-size: 50px;
+    padding-top: 12%;
+    color: rgb(51, 47, 47);
+    font-weight: lighter;
+}
+.content .prtble03>div .price h4{
+    color: #00bcd4;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.content .prtble03>div .title h2{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #00bcd4;
+}
+.content .prtble03>div ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: #5f727f;
+}
+
+.content .prtble03>div button {
+    background-color: #b6c6c9;
+    margin: 10%;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
+.content .prtble03>div button:hover{
+    background-color: #00bcd4;
+}
+
+/*footer*/
+.footer{
+    margin-top: 10%;
+    height: 60px;
+    background-color: #181828;
+    line-height: 60px;
+}
+.footer p{
+  
+    margin-left: 12%;
+    color: #8c9ba7;
+    float: left;
+}
+.footer p span{
+    color: #00bcd4;
+}
+.footer ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+.footer .contact{
+    margin-left: 35%;
+}
+
+.footer .contact ul li {
+    float: left;
+    padding: 0px 20px;
+}
+.footer .contact ul li a{
+    color: #8c9ba7;
+}
+
+.footer .media{
+    margin-left: 77%;
+}
+.footer .media ul li{
+    padding: 0px 5px;
+}
+
